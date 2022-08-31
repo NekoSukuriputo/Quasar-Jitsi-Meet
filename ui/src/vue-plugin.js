@@ -1,16 +1,17 @@
-import Component from './components/Component'
+
+import JitsiMeet from './components/JitsiMeet.vue'
 import Directive from './directives/Directive'
 
 const version = __UI_VERSION__
 
 function install (app) {
-  app.component(Component.name, Component)
+  app.component('QJitsiMeet', JitsiMeet)
   app.directive(Directive.name, Directive)
 }
 
 export {
   version,
-  Component,
+  JitsiMeet,
   Directive,
   install
 }
