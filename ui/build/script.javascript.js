@@ -75,6 +75,16 @@ const builds = [
         format: 'umd'
       }
     },
+    rollup: {
+      input: {
+        input: pathResolve('../src/index.umd.js')
+      },
+      output: {
+        name: 'QJitsiForm',
+        file: pathResolve('../dist/index.umd.js'),
+        format: 'umd'
+      }
+    },
     build: {
       unminified: true,
       minified: true,
