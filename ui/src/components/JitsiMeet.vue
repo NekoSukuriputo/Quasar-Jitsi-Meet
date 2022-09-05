@@ -20,7 +20,7 @@ export default {
 
         const jitsiContainer = ref(null)
 
-
+        let jitsiApi = ref(null)
 
         const loadScript = (src, cb) => {
             const scriptEl = document.createElement('script');
@@ -34,17 +34,17 @@ export default {
                 ...props.options,
                 parentNode: jitsiContainer.value,
             };
-            this.jitsiApi = new window.JitsiMeetExternalAPI(props.domain, options);
+            jitsiApi.value = new window.JitsiMeetExternalAPI(props.domain, options);
         }
         const executeCommand = (command, ...value) => {
-            this.jitsiApi.executeCommand(command, ...value);
+            jitsiApi.value.executeCommand(command, ...value);
         }
         const addEventListener = (event, fn) => {
-            this.jitsiApi.on(event, fn);
+            jitsiApi.value.on(event, fn);
         }
         // Misc
         const removeJitsiWidget = () => {
-            if (this.jitsiApi) this.jitsiApi.dispose();
+            if (jitsiApi.value) jitsiApi.value.dispose();
         }
 
         onMounted(() => {
@@ -59,6 +59,7 @@ export default {
         })
 
         return {
+            jitsiApi,
             jitsiContainer,
             loadScript,
             embedJitsiWidget,
