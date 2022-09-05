@@ -18,9 +18,9 @@ const showForm = (value) => {
 
 const onSubmit = () => {
   emit('submit', {
-    displayName,
-    email,
-    roomName,
+    displayName: displayName.value,
+    email:email.value,
+    roomName: roomName.value,
     isAddRoom: showAdd.value === 1
   })
 }
