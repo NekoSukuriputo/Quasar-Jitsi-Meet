@@ -9,6 +9,7 @@ import {
   QSeparator,
   QTab,
   QTabPanel,
+  QTabs
 } from "quasar";
 import { ref } from "vue";
 
