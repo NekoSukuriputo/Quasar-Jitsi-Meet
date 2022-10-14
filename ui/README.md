@@ -5,6 +5,9 @@
 
 **Compatible with Quasar UI v2 and Vue 3**.
 
+Vue component for Jitsi Meet Web Integration via IFrame wrapping by Quasar UI.
+
+> **NOTE:** Always refer to the official [Jitsi Meet IFrame API Docs](https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-iframe).
 
 # Component QJitsiMeet
 > Short description of the component

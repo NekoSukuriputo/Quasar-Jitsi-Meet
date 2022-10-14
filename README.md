@@ -3,6 +3,9 @@
 
 Compatible with Quasar UI v2 and Vue 3.
 
+# How to use 
+## [GitBook Documentation](https://abdul-rahmat.gitbook.io/quasar-jitsi-meet-documentation/)
+
 # Structure
 * [/ui](ui) - standalone npm package
 
