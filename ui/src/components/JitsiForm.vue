@@ -9,7 +9,8 @@ import {
   QSeparator,
   QTab,
   QTabPanel,
-  QTabs
+  QTabs,
+  QTabPanels
 } from "quasar";
 import { ref } from "vue";
 
@@ -92,7 +93,6 @@ const onSubmit = () => {
           </q-tab-panel>
 
           <q-tab-panel name="join_room">
-            <div class="text-h6">Join Room</div>
             <q-form @submit="onSubmit" class="q-gutter-md">
               <q-input
                 outlined
